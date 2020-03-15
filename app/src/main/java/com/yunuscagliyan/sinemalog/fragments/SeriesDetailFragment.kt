@@ -11,6 +11,7 @@ import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import androidx.navigation.ui.NavigationUI
 import com.bumptech.glide.Glide
+import com.google.android.gms.ads.AdRequest
 import com.yunuscagliyan.sinemalog.R
 import com.yunuscagliyan.sinemalog.data.api.POSTER_BASE_URL
 import com.yunuscagliyan.sinemalog.data.api.TheMovieDBClient
@@ -48,8 +49,15 @@ class SeriesDetailFragment : Fragment() {
         navController=Navigation.findNavController(view)
         initToolbar()
         initUI()
+        initAdMob()
         
 
+    }
+    private fun initAdMob() {
+        val adRequest = AdRequest.Builder()
+            .build()
+        adRequest.isTestDevice(context)
+        binding.rowAdItem.loadAd(adRequest)
     }
     private fun initUI() {
         val apiService= TheMovieDBClient.getClients()

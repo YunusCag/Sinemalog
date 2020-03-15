@@ -10,6 +10,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import com.bumptech.glide.Glide
+import com.google.android.gms.ads.AdRequest
 import com.yunuscagliyan.sinemalog.MainActivity
 
 import com.yunuscagliyan.sinemalog.R
@@ -50,8 +51,15 @@ class MovieDetailFragment : Fragment() {
         navController=Navigation.findNavController(view)
         initToolbar()
         initUI()
+        initAdMob()
 
 
+    }
+    private fun initAdMob() {
+        val adRequest = AdRequest.Builder()
+            .build()
+        adRequest.isTestDevice(context)
+        binding.rowAdItem.loadAd(adRequest)
     }
 
     private fun initUI() {

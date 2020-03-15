@@ -10,6 +10,7 @@ import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import androidx.navigation.ui.NavigationUI
 import com.bumptech.glide.Glide
+import com.google.android.gms.ads.AdRequest
 import com.yunuscagliyan.sinemalog.data.api.POSTER_BASE_URL
 import com.yunuscagliyan.sinemalog.data.model.Trend
 import com.yunuscagliyan.sinemalog.databinding.FragmentTrendDetailBinding
@@ -48,15 +49,19 @@ class TrendDetailFragment : Fragment() {
                 .into(binding.imageView)
         }
         bindUI()
+        initAdMob()
 
 
 
     }
 
-    override fun onResume() {
-        super.onResume()
-
+    private fun initAdMob() {
+        val adRequest = AdRequest.Builder()
+            .build()
+        adRequest.isTestDevice(context)
+        binding.rowAdItem.loadAd(adRequest)
     }
+
 
     private fun bindUI(){
         binding.movieRuntime.text=trend.name
