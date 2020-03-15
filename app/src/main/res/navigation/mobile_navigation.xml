@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/destination_splash_screen">
+
+    <fragment
+        android:id="@+id/destination_splash_screen"
+        android:name="com.yunuscagliyan.sinemalog.fragments.SplashScreenFragment"
+        android:label="Splash Screen"
+        tools:layout="@layout/fragment_splash_screen" >
+        <action
+            android:id="@+id/next_action"
+            app:destination="@id/destination_on_boarding"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/destination_on_boarding"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/destination_on_boarding"
+        android:name="com.yunuscagliyan.sinemalog.fragments.OnBoardingFragment"
+        android:label="OnBoarding Screen"
+        tools:layout="@layout/fragment_on_boarding" />
+    <fragment
+        android:id="@+id/destination_settings"
+        android:name="com.yunuscagliyan.sinemalog.fragments.SettingsFragment"
+        android:label="@string/settings_title"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/destination_trend_detail"
+        android:name="com.yunuscagliyan.sinemalog.fragments.TrendDetailFragment"
+        android:label="Trend Detail"
+        tools:layout="@layout/fragment_trend_detail" >
+        <argument
+            android:name="trend"
+            app:argType="com.yunuscagliyan.sinemalog.data.model.Trend" />
+    </fragment>
+    <fragment
+        android:id="@+id/destination_trending"
+        android:name="com.yunuscagliyan.sinemalog.fragments.TrendingFragment"
+        android:label="@string/trending"
+        tools:layout="@layout/fragment_trending" >
+        <action
+            android:id="@+id/next_detail"
+            app:destination="@id/destination_trend_detail"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/destination_trending" />
+    </fragment>
+    <fragment
+        android:id="@+id/destination_popular"
+        android:name="com.yunuscagliyan.sinemalog.fragments.PopularFragment"
+        android:label="@string/popular"
+        tools:layout="@layout/fragment_popular" >
+        <action
+            android:id="@+id/detail_action"
+            app:destination="@id/destination_movie_detail"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/destination_tvseries"
+        android:name="com.yunuscagliyan.sinemalog.fragments.TvSeriesFragment"
+        android:label="@string/tv_series"
+        tools:layout="@layout/fragment_tv_series" >
+        <action
+            android:id="@+id/detail_action"
+            app:destination="@id/destination_series_detail"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_close_exit"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/destination_movie_detail"
+        android:name="com.yunuscagliyan.sinemalog.fragments.MovieDetailFragment"
+        android:label="@string/upcoming_movie"
+        tools:layout="@layout/fragment_movie_detail">
+        <argument
+            android:name="movieId"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/destination_series_detail"
+        android:name="com.yunuscagliyan.sinemalog.fragments.SeriesDetailFragment"
+        android:label="@string/series_detail"
+        tools:layout="@layout/fragment_series_detail" >
+        <argument
+            android:name="seriesId"
+            app:argType="integer"
+            android:defaultValue="-1" />
+    </fragment>
+</navigation>

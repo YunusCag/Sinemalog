@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <group android:id="@+id/menu_top"
+            android:checkableBehavior="single">
+            <item android:id="@+id/destination_trending"
+                android:title="@string/trending"
+                android:checkable="true"
+                android:icon="@drawable/cinema_icon"/>
+            <item android:id="@+id/destination_popular"
+                android:checkable="true"
+                android:title="@string/upcoming_movies"
+                android:icon="@drawable/movie_icon"/>
+            <item android:id="@+id/destination_tvseries"
+                android:title="@string/tv_series"
+                android:checkable="true"
+                android:icon="@drawable/tv_icon"/>
+        </group>
+
+        <group android:id="@+id/menu_bottom"
+            android:checkableBehavior="none">
+            <item android:id="@+id/destination_settings"
+                android:title="Settings"
+                android:checkable="true"
+                android:icon="@drawable/ic_settings_black"/>
+        </group>
+
+
+
+
+</menu>

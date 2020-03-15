@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sinemalog</string>
+    <string name="hello_blank_fragment">Merhaba Boş Fragment</string>
+    <string name="home_page">Anasayfa</string>
+    <string name="settings_title">Ayarlar</string>
+    <string name="connection_problem">"Bağlantı Sorunu "</string>
+    <string name="click_to_refresh">Yeniden Dene</string>
+    <string name="pick_a_theme">Bir tema seçin</string>
+    <string name="turn_on_night_mode_for_eye_health">Gece modunu açın</string>
+    <string name="upcoming_movie">Gelecek Filmler</string>
+    <string name="sub_title">Alt Başlıklar</string>
+    <string name="movie_info">Film Açıklaması</string>
+    <string name="releasedate">Yayın Tarihi:</string>
+    <string name="rating">Değerlendirme:</string>
+    <string name="runtime">Süre:</string>
+    <string name="budget">Bütçe:</string>
+    <string name="revenue">Gelir:</string>
+    <string name="overview">Film Özeti</string>
+    <string name="trend_info">Trend Açıklama:</string>
+    <string name="vote_count">Oy Sayısı:</string>
+    <string name="vote_average">Oy Ortalaması:</string>
+    <string name="series_info">Dizi Açıklaması</string>
+    <string name="seasons">Sezon Sayısı:</string>
+    <string name="episodes">Bölüm Sayısı:</string>
+    <string name="series_status">Dizi Durumu:</string>
+    <string name="popularity">Popülerlik:</string>
+    <string name="type">Kategori:</string>
+    <string name="end_date">Bitiş Tarihi:</string>
+    <string name="trending">Trendler</string>
+    <string name="upcoming_movies">Gelecek Filmler</string>
+    <string name="tv_series">Diziler</string>
+    <string name="popular">Popüler</string>
+    <string name="series_detail">Dizi Detayı</string>
+</resources>

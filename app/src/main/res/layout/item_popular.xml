@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardUseCompatPadding="true"
+    android:elevation="5dp"
+    app:cardCornerRadius="2dp">
+    <ImageView
+        android:id="@+id/popularIV"
+        android:transitionName="popularDetailView"
+        android:layout_width="150dp"
+        android:src="@drawable/poster_placeholder"
+        android:scaleType="centerCrop"
+        android:layout_height="190dp"/>
+
+</androidx.cardview.widget.CardView>

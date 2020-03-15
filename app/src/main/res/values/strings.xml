@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Sinemalog</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="settings_title">Settings</string>
+    <string name="connection_problem">Connection Problem!!</string>
+    <string name="click_to_refresh">Click to refresh</string>
+    <string name="pick_a_theme">Pick a theme</string>
+    <string name="turn_on_night_mode_for_eye_health">"Turn On Night Mode "</string>
+    <string name="upcoming_movie">Upcoming Movie</string>
+    <string name="sub_title">sub title</string>
+    <string name="movie_info">Movie Info</string>
+    <string name="releasedate">ReleaseDate:</string>
+    <string name="rating">Rating:</string>
+    <string name="runtime">Runtime:</string>
+    <string name="budget">Budget:</string>
+    <string name="revenue">Revenue:</string>
+    <string name="overview">Overview</string>
+    <string name="trend_info">Trend Info:</string>
+    <string name="vote_count">Vote Count:</string>
+    <string name="vote_average">Vote Average:</string>
+    <string name="series_info">Series Info</string>
+    <string name="seasons">Seasons:</string>
+    <string name="episodes">Episodes:</string>
+    <string name="series_status">Series Status:</string>
+    <string name="popularity">Popularity:</string>
+    <string name="type">Type:</string>
+    <string name="end_date">End Date:</string>
+    <string name="upcoming_movies">Upcoming Movies</string>
+    <string name="trending">Trends</string>
+    <string name="popular">Upcoming Movies</string>
+    <string name="tv_series">Top Rated TV Series</string>
+    <string name="home_page">Home Page</string>
+    <string name="series_detail">Series Detail</string>
+</resources>
