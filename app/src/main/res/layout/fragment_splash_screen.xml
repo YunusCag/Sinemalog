@@ -7,17 +7,19 @@
     tools:context=".fragments.SplashScreenFragment">
 
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="0dp"
+    <com.hanks.htextview.rainbow.RainbowTextView
+        android:id="@+id/rainbowTextView"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="297dp"
-        android:text="SplashScreen"
+        android:text="Sinemalog"
+        android:textSize="28sp"
         android:textAlignment="center"
-        android:textSize="32sp"
         android:textStyle="bold"
+        app:colorSpace="150dp"
+        app:colorSpeed="4dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

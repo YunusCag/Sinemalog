@@ -8,7 +8,7 @@
     <string name="click_to_refresh">Click to refresh</string>
     <string name="pick_a_theme">Pick a theme</string>
     <string name="turn_on_night_mode_for_eye_health">"Turn On Night Mode "</string>
-    <string name="upcoming_movie">Upcoming Movie</string>
+    <string name="upcoming_movie">Movies in Theaters</string>
     <string name="sub_title">sub title</string>
     <string name="movie_info">Movie Info</string>
     <string name="releasedate">ReleaseDate:</string>
@@ -27,10 +27,15 @@
     <string name="popularity">Popularity:</string>
     <string name="type">Type:</string>
     <string name="end_date">End Date:</string>
-    <string name="upcoming_movies">Upcoming Movies</string>
+    <string name="upcoming_movies">Movies in Theaters</string>
     <string name="trending">Trends</string>
-    <string name="popular">Upcoming Movies</string>
+    <string name="popular">Movies in Theaters</string>
     <string name="tv_series">Top Rated TV Series</string>
     <string name="home_page">Home Page</string>
     <string name="series_detail">Series Detail</string>
+    <string name="skip_welcome_page">Skip Page</string>
+    <string name="day_light_mode">Day Mode</string>
+    <string name="dark_mode">Night Mode</string>
+    <string name="change_theme">Change Theme</string>
+    <string name="trend_movie">Trend Movie</string>
 </resources>

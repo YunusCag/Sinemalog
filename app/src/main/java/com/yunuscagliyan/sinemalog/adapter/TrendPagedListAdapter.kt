@@ -42,7 +42,7 @@ class TrendPagedListAdapter(
             return TrendViewHolder(view)
         }else if(viewType==NETWORK_STATE_TYPE){
             view=layoutInflater.inflate(R.layout.network_state_item,parent,false)
-            return NetworkStateViewHolder(view)
+            return TrendPagedListAdapter.NetworkStateViewHolder(view)
         }else{
             view=layoutInflater.inflate(R.layout.item_advertise,parent,false)
             return TrendPagedListAdapter.AdItemViewHolder(view)

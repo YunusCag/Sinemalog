@@ -127,6 +127,7 @@ class MovieDetailFragment : Fragment() {
         var statusColor=sharedPref.loadStatusBarColor()
         var window=activity!!.window
         window.statusBarColor=statusColor
+
     }
     private fun getViewModel(movieId:Int): MovieDetailViewModel {
         return ViewModelProvider(this, object : ViewModelProvider.Factory {

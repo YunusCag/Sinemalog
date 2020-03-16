@@ -48,17 +48,17 @@ class OnBoardingFragment : Fragment() {
         mList=ArrayList<OnBoardingModel>()
         mList.add(
             OnBoardingModel(
-            R.drawable.brochure,"Brochure","Brochure is an informative paper document (often also used for advertising) that can be folded into a template"
+            R.drawable.light_theme,resources.getString(R.string.day_light_mode)
         )
         )
         mList.add(OnBoardingModel(
-            R.drawable.sticker,"Sticker","Sticker is a type of label: a piece of printed paper, plastic, vinyl, or other material with pressure sensitive adhesive on one side"
+                R.drawable.dark_theme,resources.getString(R.string.dark_mode)
         ))
         mList.add(OnBoardingModel(
-            R.drawable.poster,"Poster","Poster is any piece of printed paper designed to be attached to a wall or vertical surface."
+            R.drawable.change_theme,resources.getString(R.string.change_theme)
         ))
         mList.add(OnBoardingModel(
-            R.drawable.namecard,"NameCard","Business cards are cards bearing business information about a company or individual."
+            R.drawable.trend,resources.getString(R.string.trend_movie)
         ))
         mAdapter= OnboardingPageAdapter(mList,context!!)
         binding.viewPager.adapter=mAdapter

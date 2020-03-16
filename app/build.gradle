@@ -74,5 +74,9 @@ dependencies {
     implementation 'com.tbuonomo.andrui:viewpagerdotsindicator:4.1.2'
     //Admob
     implementation 'com.google.android.gms:play-services-ads:19.0.0'
+    def htextview_version = "0.1.6"
+    // as 3.0 use implementation
+    implementation "com.hanks:htextview-base:$htextview_version"
+    implementation "com.hanks:htextview-rainbow:$htextview_version"     // optional
 
 }

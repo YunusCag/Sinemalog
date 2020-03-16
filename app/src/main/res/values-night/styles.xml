@@ -31,6 +31,7 @@
         <item name="itemIconTint">@android:color/white</item>
         <item name="android:colorAccent">@color/colorAccent</item>
         <item name="colorControlActivated">@color/colorAccent</item>
+
     </style>
 
     <style name="CustomDialog" parent="Theme.AppCompat.DayNight.Dialog.Alert"/>

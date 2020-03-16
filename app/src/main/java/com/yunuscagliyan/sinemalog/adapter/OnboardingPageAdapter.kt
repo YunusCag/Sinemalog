@@ -29,12 +29,9 @@ var context: Context
         var view=layoutInflater.inflate(R.layout.item_onboarding,container,false)
         var imageView=view.findViewById<ImageView>(R.id.ivOnBoard)
         var tvTitle=view.findViewById<TextView>(R.id.tvTitle)
-        var tvDescription=view.findViewById<TextView>(R.id.tvDescription)
-
         var model=modelList[position]
         Glide.with(context).load(model.image).into(imageView)
         tvTitle.text=""+model.title
-        tvDescription.text=""+model.description
         container.addView(view,0)
 
 
